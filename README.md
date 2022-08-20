@@ -8,7 +8,9 @@ aptos node binary file extracted from aptos offical docker image.
 
 例如：```./bin/aptos genesis generate-keys --output-dir $WORKDIR```
 
-例如：```./bin/aptos-node -f $WORKDIR/validator.yaml```
+公钥和节点配置文件准备就绪后运行
+
+```./bin/aptos-node -f $WORKDIR/validator.yaml```
 
 
 ## 纯净系统直接运行验证节点命令 (只在ubuntu 20.04版本下测试通过 其余系统与版本未做测试)
