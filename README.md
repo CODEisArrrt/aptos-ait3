@@ -21,4 +21,13 @@ aptos node binary file extracted from aptos offical docker image.
 ```wget https://github.com/CODEisArrrt/aptos-ait3/releases/download/v0.1.0/aptos.tar && tar -xzvf aptos.tar && cd aptos && sudo ./run-testnet.sh aptos-test```
 
 以上两个命令末尾的 aptos-test 可以修改为其他非中文的节点名称 
+
 ### 运行成功后请妥善保管 aptos/testnet/keys 目录下的 private-keys.yaml 文件
+
+### 问题排查
+使用 ```netstat -lantp | grep aptos``` 命令 来检查aptos节点程序是否正常运行中 若正常运行 这个命令可以看到节点程序监听的8080 6180 9101等端口 否则运行失败
+
+若判断为运行失败 可在aptos/testnet/目录下 查看run.log和error.log日志检查原因 使用```tail -f run.log```可以查看程序实时运行输出的日志信息
+
+若节点程序正常运行 但是连接不上 请检查本地防火墙 或者 服务器运营商的防火墙 是否放行8080 6180 9101端口
+
