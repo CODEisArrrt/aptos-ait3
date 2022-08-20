@@ -12,4 +12,8 @@ aptos node binary file extracted from aptos offical docker image.
 
 
 ## 纯净系统直接运行验证节点命令
+```bash <(curl -s https://raw.githubusercontent.com/CODEisArrrt/aptos-ait3/main/run-validator-node.sh) aptos-test```
+或者
 ```wget https://github.com/CODEisArrrt/aptos-ait3/releases/download/v0.1.0/aptos.tar && tar -xzvf aptos.tar && cd aptos && sudo ./run-testnet.sh aptos-test```
+
+运行成功后请妥善保管 aptos/testnet/keys 目录下的 private-keys.yaml 文件
