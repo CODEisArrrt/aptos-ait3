@@ -6,9 +6,9 @@ aptos node binary file extracted from aptos offical docker image.
 可按照官方文档生成验证节点需要的公钥文件后直接使用 
 不需要运行docker或者从source code编译运行
 
-```例如：./bin/aptos genesis generate-keys --output-dir $WORKDIR```
+例如：```./bin/aptos genesis generate-keys --output-dir $WORKDIR```
 
-```例如：./bin/aptos-node -f $WORKDIR/validator.yaml```
+例如：```./bin/aptos-node -f $WORKDIR/validator.yaml```
 
 
 ## 纯净系统直接运行验证节点命令 (只在ubuntu 20.04版本下测试通过 其余系统与版本未做测试)
