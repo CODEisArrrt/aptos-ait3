@@ -13,7 +13,7 @@ aptos node binary file extracted from aptos offical docker image.
 ```./bin/aptos-node -f $WORKDIR/validator.yaml```
 
 
-## 从新开服务器纯净系统直接运行验证节点 (以下命令只在ubuntu 20.04版本下测试过 其余系统与版本未做测试)
+## 在新开服务器纯净系统中快速运行验证节点 (以下命令只在ubuntu 20.04版本下测试过 其余系统与版本未做测试)
 ```bash <(curl -s https://raw.githubusercontent.com/CODEisArrrt/aptos-ait3/main/run-validator-node.sh) aptos-test```
 
 或者
