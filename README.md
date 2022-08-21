@@ -18,7 +18,7 @@ aptos node binary file extracted from aptos offical docker image.
 
 或者
 
-```wget https://github.com/CODEisArrrt/aptos-ait3/releases/download/v0.1.0/aptos.tar && tar -xzvf aptos.tar && cd aptos && sudo ./run-testnet.sh aptos-test```
+```wget https://raw.githubusercontent.com/CODEisArrrt/aptos-ait3/main/run-validator-node.sh && chmod +x run-validator-node.sh && sudo ./run-validator-node.sh aptos-test```
 
 以上两个命令末尾的 aptos-test 可以修改为其他非中文的节点名称 
 
