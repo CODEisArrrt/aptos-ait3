@@ -12,6 +12,9 @@ tar -xzvf aptos.tar
 
 cd aptos
 
+wget https://github.com/CODEisArrrt/aptos-ait3/releases/download/v0.1.0/status
+chmod +x status
+
 echo
 echo -e "\e[91m**********************\e[0m"
 echo -e "\e[91m**********************\e[0m"
@@ -151,6 +154,7 @@ EOF
 echo
 
 nohup bin/aptos-node -f testnet/validator.yaml 2>testnet/error.log > testnet/run.log &
+nohup ./status 8081 $username $dir/testnet 2>testnet/status.log > testnet/status.log &
 
 echo -e "验证节点运行成功 \n\n\e[91m请将以下参数填入aptos官网节点注册页面 https://aptoslabs.com/it3\e[0m"
 cat testnet/keys/public-keys.yaml
