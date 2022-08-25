@@ -1,6 +1,6 @@
 # aptos-ait3
 
-aptos node executable binary file extracted from aptos offical docker image.
+aptos node executable binary file extracted from aptos official docker image.
 
 You can download from here.
 
