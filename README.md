@@ -1,6 +1,23 @@
 # aptos-ait3
 
-aptos node binary file extracted from aptos offical docker image.
+aptos node executable binary file extracted from aptos offical docker image.
+
+You can download from here.
+
+```wget https://github.com/CODEisArrrt/aptos-ait3/releases/download/v0.1.0/aptos.tar```
+
+Then unzip it.
+
+```tar -zxvf aptos.tar && cd aptos```
+
+After download and unzip, you can use it in command line whenever you need a aptos or aptos-node cmd.
+
+Example: 
+```./bin/aptos genesis generate-keys --output-dir YOUR_WORK_PATH```
+
+Example:
+```./bin/aptos-node -f YOUR_WORK_PATH/validator.yaml```
+
 
 从官方docker镜像提取出来的aptos-node
 可按照官方文档生成验证节点需要的公钥文件后直接使用 
