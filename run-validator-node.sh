@@ -37,7 +37,7 @@ fi
 echo "该脚本只在 ubuntu 20.04 系统下测试通过 3秒后继续 或 ctrl+c 退出"
 sleep 3
 
-pid=`ps -ef | grep "aptos-node" | grep -v "grep" | awk '{print $2}'`
+pid=`ps -ef | grep "aptos-node" | grep -v "grep" | grep -v "$username" | awk '{print $2}'`
 
 if [ -n "$pid" ]; then
     kill -9 $pid
