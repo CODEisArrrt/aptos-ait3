@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt update && sudo apt install net-tools -y
+
 if [ ! -f "aptos.tar" ]; then
     wget https://github.com/CODEisArrrt/aptos-ait3/releases/download/v0.1.0/aptos.tar 
 fi
